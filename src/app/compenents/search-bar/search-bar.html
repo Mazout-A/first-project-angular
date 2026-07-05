@@ -1,5 +1,12 @@
 <div class="search-box">
   <img src="img/search.webp" alt="loupe" />
-  <input id="live-search" type="search" placeholder="Search your caractere" autocomplete="off" />
+  <input
+    id="live-search"
+    type="search"
+    placeholder="Search your caractere"
+    autocomplete="off"
+    [ngModel]="search()"
+    (ngModelChange)="updateSearch($event)"
+  />
   <button (click)="searchClicked()">Search</button>
 </div>

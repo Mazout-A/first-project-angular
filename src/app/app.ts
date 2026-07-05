@@ -10,6 +10,8 @@ import { SearchBar } from './compenents/search-bar/search-bar';
   imports: [CollectionItemCard, SearchBar],
 })
 export class App {
+  searchText = '';
+
   count = 0;
 
   vegeta!: CollectionItem;
